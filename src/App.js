@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout"
@@ -12,7 +11,9 @@ import AddJob from "./pages/AddJob";
 function App() {
   return (
     
+<div>
 
+</div>
   );
 }
 
