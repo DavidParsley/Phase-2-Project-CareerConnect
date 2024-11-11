@@ -12,8 +12,8 @@ export default function Footer() {
                 <p>
                 Slogan:<br></br>
                 Your Path to the Right Job,<br></br>
-                Your Bridge to the Right Talent
-
+                Your Bridge to the Right Talent<br></br>
+                Anne Maliik Dave
                 </p>
               </div>
               {/* <!-- Grid column -->
@@ -45,7 +45,7 @@ export default function Footer() {
                 {/* <!-- Links --> */}
                 <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                 <p>
-                  <i class="fas fa-home me-3"></i> Moringa, Ngong Lane, KE
+                  <i class="fas fa-home me-3"></i> Moringa,  Ngong Lane, KE
                 </p>
                 <p>
                   <i class="fas fa-envelope me-3"></i>
