@@ -1,14 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout"
+import Home from "./pages/Home";
+import About from "./pages/About";
+import NoPage from "./pages/NoPage";
+import { Outlet } from "react-router-dom";
+import Job from "./pages/Job";
+import AddJob from "./pages/AddJob";
 
 function App() {
   return (
-    <div className="App">
-     <Navbar />
-     <Footer/>
-    </div>
+    
+
   );
 }
 
