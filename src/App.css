@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.abc{
+  font-size: x-large;
+}
+
+.xyz{
+  font-size: x-large;
+}
+
 .xyz:hover{
   color: white;
 }

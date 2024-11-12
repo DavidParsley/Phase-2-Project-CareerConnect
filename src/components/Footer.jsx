@@ -3,6 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div>
+      <hr></hr>
       <footer class="text-center text-lg-start bg-body-tertiary text-muted">
         <section class="">
           <div class="container text-center text-md-start mt-5">
@@ -52,10 +53,10 @@ export default function Footer() {
                   CareerConnect@gmail.com
                 </p>
                 <p>
-                  <i class="fas fa-phone me-3"></i> + 01 234 567 88
+                  <i class="fas fa-phone me-3"></i> +254 712 543684
                 </p>
                 <p>
-                  <i class="fas fa-print me-3"></i> + 01 234 567 89
+                  <i class="fas fa-print me-3"></i> +354 726 892364
                 </p>
               </div>
             </div>
