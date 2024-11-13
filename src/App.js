@@ -7,6 +7,7 @@ import NoPage from "./pages/NoPage";
 import { Outlet } from "react-router-dom";
 import Job from "./pages/Job";
 import AddJob from "./pages/AddJob";
+import { ToastContainer,toast } from "react-toastify";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
+      <ToastContainer />
     </BrowserRouter>
   );
 }
