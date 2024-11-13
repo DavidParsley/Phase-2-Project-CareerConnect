@@ -6,10 +6,11 @@ import { toast } from "react-toastify";
 export default function AddStudent() {
   const [title, setTitle] = useState();
   const [company, setCompany] = useState();
-  const [location, setLocation] = useState();
+  const [location, setLocation] = useState([]);
   const [description, setDescription] = useState();
   const [requirements, setRequirements] = useState([]);
-  const [image, setImage] = useState([]);
+  const [image, setImage] = useState();
+  const [available, setAvailable] = useState(false);
 
   const nav = useNavigate()
 
@@ -19,11 +20,14 @@ export default function AddStudent() {
   console.log(description);
   console.log(requirements);
   console.log(image);
+  console.log(available)
 
   function handleSubmit(e) {
     e.preventDefault();
 
-  
+  const requirementsList= requirements.split (",")
+ 
+
     fetch(`http://localhost:3000/jobs`, {
       method: "POST",
       headers: {
@@ -34,8 +38,9 @@ export default function AddStudent() {
         company: company,
         location: location,
         description: description,
-        requirements: requirements,
-        image: image
+        requirements: requirementsList,
+        image: image,
+        available: available
       }),
     })
       .then((res) => res.json())
@@ -44,7 +49,7 @@ export default function AddStudent() {
   
         
         nav("/");
-        toast.success("Jobs added successfully!");
+        toast.success("Job added successfully!");
       });
   
     setTitle("");
@@ -53,6 +58,7 @@ export default function AddStudent() {
     setDescription("");
     setRequirements("");
     setImage("");
+    setAvailable("");
 
   }
   
@@ -68,11 +74,12 @@ export default function AddStudent() {
           Title
         </label>
         <input
-          type="email"
+          type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           className="form-control"
           placeholder="Enter Job Title"
+          required
         />
       </div>
 
@@ -86,6 +93,7 @@ export default function AddStudent() {
           onChange={(e) => setCompany(e.target.value)}
           className="form-control"
           placeholder="Enter Company Name"
+          required
         />
       </div>
 
@@ -94,11 +102,12 @@ export default function AddStudent() {
           Location
         </label>
         <input
-          type="number"
+          type="text"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           className="form-control"
           placeholder="Enter Location"
+          required
         />
          </div>
 
@@ -107,11 +116,12 @@ export default function AddStudent() {
          Description
         </label>
         <input
-          type="url"
+          type="text"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           className="form-control"
           placeholder="Enter Job Description"
+          required
         />
       </div>
 
@@ -125,19 +135,36 @@ export default function AddStudent() {
           onChange={(e) => setRequirements(e.target.value)}
           className="form-control"
           placeholder="Enter Job Requirements"
+          required
         />
       </div>
+
+      <div className="mb-3">
+  <label htmlFor="Available" className="form-label">
+    Available
+  </label>
+  <input
+    type="checkbox"
+    checked={available}  // Boolean value (true/false)
+    onChange={(e) => setAvailable(e.target.checked)} // Update based on whether checked or not
+    className="form-check-input"
+    id="Available"
+    />
+</div>
+
+ 
 
       <div className="mb-3">
         <label htmlFor="Image" className="form-label">
           Image
         </label>
         <input
-          type="text"
+          type="url"
           value={image}
           onChange={(e) => setImage(e.target.value)}
           className="form-control"
           placeholder="Enter Image"
+          required
         />
       </div>
 
