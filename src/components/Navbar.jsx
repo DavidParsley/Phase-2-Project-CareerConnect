@@ -11,10 +11,10 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link" aria-current="page" href="#"><strong className='xyz'>Home</strong></a>
+          <a className="nav-link" aria-current="page" href={"/"}><strong className='xyz'>Home</strong></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#"><strong className='xyz'>About</strong></a>
+          <a className="nav-link" href={"/about"}><strong className='xyz'>About</strong></a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#"><strong className='xyz'>Add Job</strong></a>
