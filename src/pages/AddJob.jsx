@@ -145,8 +145,8 @@ export default function AddStudent() {
   </label>
   <input
     type="checkbox"
-    checked={available}  // Boolean value (true/false)
-    onChange={(e) => setAvailable(e.target.checked)} // Update based on whether checked or not
+    checked={available} 
+    onChange={(e) => setAvailable(e.target.checked)} 
     className="form-check-input"
     id="Available"
     />
