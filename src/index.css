@@ -190,3 +190,83 @@ code {
   border: none; 
 }
 /*NavBar search button styling ends here */
+
+/* Navbar Styling starts here */
+.navbar-nav {
+  display: flex;
+  align-items: center; 
+}
+
+/* Center dropdown in navbar */
+.nav-item.dropdown {
+  position: relative;
+  margin-left: 20px; 
+}
+
+.dropdown-menu {
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+/* Align SVG icon with CareerConnect text */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Vertically aligns the SVG icon and text */
+}
+
+.navbar-brand svg {
+  margin-bottom: 6px; /* Adjust the position of the SVG slightly to align it with the text */
+}
+
+.nav-item, .navbar-brand, .navbar-toggler {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+}
+
+form.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+form .form-control {
+  margin-right: 8px; 
+}
+
+form button {
+  height: 100%; 
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.nav-item {
+  margin-bottom: 0; 
+}
+
+.navbar-toggler-icon {
+  color: white; 
+}
+
+
+.nav-item .nav-link {
+  color: #fff; 
+  transition: color 0.3s ease; }
+
+
+.nav-item .nav-link:hover {
+  color: white !important; }
+
+
+.nav-item .nav-link.active {
+  color: white !important;
+}
+/* Navbar Styling ends here */
+
