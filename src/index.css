@@ -178,6 +178,15 @@ code {
 }
 /* NoPage Component Styling ends here */
 
+/* Footer links styling */
 .text-reset{
   text-decoration: none;
 }
+
+/*NavBar search button styling starts here */
+.btn-btn{
+  background-color: rgb(255, 255, 255); 
+  color: #2557a7; 
+  border: none; 
+}
+/*NavBar search button styling ends here */

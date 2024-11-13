@@ -1,19 +1,8 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 
-export default function Home() {
-  const [jobs, setJobs] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3000/jobs")
-      .then((response) => response.json())
-      .then((data) => {
-        setJobs(data);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+export default function Home({jobs}) {
 
   return (
     <div className="container mt-5">
