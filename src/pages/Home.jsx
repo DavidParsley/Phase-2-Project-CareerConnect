@@ -27,7 +27,7 @@ export default function Home() {
       <div className="row">
         {jobs &&
           jobs.map((detail) => (
-            <Link to={`/student/${detail.id}`} className="col-md-4 col-lg-3 mb-4 link-dark card-link" key={detail.id}>
+            <Link to={`/job/${detail.id}`} className="col-md-4 col-lg-3 mb-4 link-dark card-link" key={detail.id}>
               <div className="card h-100">
                 <img src={detail.image} className="card-img-top" alt={detail.title}/>
                 <div className="card-body d-flex flex-column">
