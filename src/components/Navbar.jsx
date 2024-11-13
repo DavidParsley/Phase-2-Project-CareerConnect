@@ -17,7 +17,7 @@ export default function Navbar() {
           <a className="nav-link" href={"/about"}><strong className='xyz'>About</strong></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#"><strong className='xyz'>Add Job</strong></a>
+          <a className="nav-link" href={"/addJob"}><strong className='xyz'>Add Job</strong></a>
         </li>
       </ul>
       <form className="d-flex">
