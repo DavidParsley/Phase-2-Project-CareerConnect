@@ -23,17 +23,17 @@ export default function Footer() {
                 {/* <!-- Links --> */}
                 <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a href="/" class="text-reset">
                     Home
                   </a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a href="/about" class="text-reset">
                     About
                   </a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">
+                  <a href="/addJob" class="text-reset">
                     Add Job
                   </a>
                 </p>
