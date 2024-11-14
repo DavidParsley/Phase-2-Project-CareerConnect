@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Home({ jobs }) {
-  const [sortOption, setSortOption] = useState("title");
-  const sortedJobs = [...jobs].sort((a, b) => {
+export default function Home({ jobs, sortOption, setSortOption }) {
+  const sortedJobs = [...jobs].sort((firstOption, secondOption) => {
     if (sortOption === "title") {
-      return a.title < b.title ? -1 : a.title > b.title ? 1 : 0;
+      return firstOption.title < secondOption.title ? -1 : firstOption.title > secondOption.title ? 1: 0;
+    } else if (sortOption === "company") {
+      return firstOption.company < secondOption.company ? -1 : firstOption.company > secondOption.company ? 1 : 0;
     } else {
-      return a.company < b.company ? -1 : a.company > b.company ? 1 : 0;
+      return firstOption.id - secondOption.id;
     }
   });
+
   return (
     <div className="container mt-5">
       <div className="d-flex justify-content-between align-items-center">
@@ -26,6 +28,7 @@ export default function Home({ jobs }) {
             className="form-select form-select-sm"
             style={{ width: "150px" }}
           >
+            <option></option>
             <option value="title">Title</option>
             <option value="company">Company</option>
           </select>
