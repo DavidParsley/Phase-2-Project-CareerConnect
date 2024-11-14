@@ -50,12 +50,10 @@
 * No known bugs at the moment.
 
 # Support and Contact Details
-
 * If you encounter any issues or have questions, feel free to reach out to us:
-
-    Anne Muriuki: muriukianne05@gmail.com
-    Abdimalik Abdullahi: Lildarwish13158@gmail.com
-    David Parsley: davidparsley.kakhayanga@gmail.com
+* Anne Muriuki: muriukianne05@gmail.com
+* Abdimalik Abdullahi: Lildarwish13158@gmail.com
+* David Parsley: davidparsley.kakhayanga@gmail.com
 
 # License
 *Licenced under the [MT-licence](https://opensource.org/license/mit)*
