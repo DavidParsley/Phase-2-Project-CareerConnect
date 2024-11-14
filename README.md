@@ -21,7 +21,7 @@
 ## Live Server
 
 * You can view the live web app on: ()
-* You can view the backend db.json to here ()
+* You can view the render  here (https://phase-2-project-careerconnect.onrender.com)
 
 # Features
 
