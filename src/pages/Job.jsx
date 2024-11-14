@@ -16,7 +16,7 @@ export default function Job() {
 
   
   useEffect(() => {
-    fetch(`https://phase-2-project-careerconnect.onrender.com/jobs/${id}`)
+    fetch(`http://localhost:3000/jobs/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setJob(data);
@@ -33,7 +33,7 @@ export default function Job() {
 
 
   function handleDelete() {
-    fetch(`https://phase-2-project-careerconnect.onrender.com/jobs/${id}`, {
+    fetch(`http://localhost:3000/jobs/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -55,7 +55,7 @@ export default function Job() {
     const requirementsList = !Array.isArray(requirements) ? requirements.split(",") : requirements
 
 
-    fetch(`https://phase-2-project-careerconnect.onrender.com/jobs/${id}`, {
+    fetch(`http://localhost:3000/jobs/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
