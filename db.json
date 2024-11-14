@@ -1,40 +1,77 @@
 {
   "jobs": [
     {
-      "id": "2",
-      "title": "Digital Marketing Specialist",
-      "company": "MarketPro",
-      "location": "Mombasa, Kenya",
-      "description": "We are looking for a creative Digital Marketing Specialist...",
+      "id": "1",
+      "title": "Software Engineer",
+      "company": "Moringa",
+      "location": "Nairobi, Kenya",
+      "description": "We are looking for a passionate Software Engineer to develop, test, and maintain web and mobile applications. You will collaborate with cross-functional teams to deliver high-quality software solutions.",
       "requirements": [
-        "Bachelor's degree in Marketing or related field",
-        "2+ years of experience in digital marketing",
-        "Strong understanding of SEO, SEM, and social media marketing"
+        "Proficiency in programming languages such as Java, Python, or C++",
+        "Experience with web development frameworks (e.g., React, Angular)",
+        "Strong understanding of software development principles and best practices",
+        "Experience with version control tools (e.g., Git)"
+      ],
+      "available": true,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kG2hzTrxMpjsPd66U_mGEdUgcgk3aNPimA&s"
+    },
+    {
+      "id": "2",
+      "title": "Community Outreach Coordinator",
+      "company": "Health4All",
+      "location": "Kisumu, Kenya",
+      "description": "We are looking for a passionate Community Outreach Coordinator to lead health awareness campaigns and engage local communities to promote public health initiatives.",
+      "requirements": [
+        "Strong communication and interpersonal skills",
+        "Experience in community outreach or public health roles",
+        "Ability to develop and manage outreach programs",
+        "Fluency in Kiswahili and English"
       ],
       "available": false,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR5AMguMfSkdpBw5L-RMIHMR2nlJjNXUS9Ew&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMX7g8Dj0lOdD1cWzxv5EwD51XE_HZmj0ntQ&s"
     },
     {
       "id": "3",
-      "title": "UI/UX Designer",
-      "company": "DesignCo",
-      "location": "Kilimani, Nairobi",
-      "description": "We are looking for a skilled UI/UX Designer to create stunning user interfaces...",
+      "title": "Data Scientist",
+      "company": "TechAnalytics",
+      "location": "Westlands, Nairobi",
+      "description": "We are seeking a talented Data Scientist to analyze large datasets, build predictive models, and provide actionable insights that support data-driven decision-making.",
       "requirements": [
-        "Portfolio demonstrating strong design skills",
-        "Experience with design tools like Figma or Adobe XD",
-        "Understanding of user experience principles"
+        "Strong background in statistical analysis and machine learning",
+        "Proficiency in Python, R, and SQL",
+        "Experience with data visualization tools (e.g., Tableau, Power BI)",
+        "Excellent problem-solving skills and ability to work in a fast-paced environment"
       ],
       "available": false,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp4obpDegRNP_LYmUAbgdzc8aya8SmsEf-bA&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg_zdv9KOVwEUX6htFb6YyvRg0tqGjJLqtwQ&s"
+    },
+    {
+      "id": "4",
+      "title": "Graphic Designer",
+      "company": "CreativeHub",
+      "location": "Nairobi, Kenya",
+      "description": "We are seeking an experienced Graphic Designer to create visually compelling designs for marketing campaigns, websites, and branding.",
+      "requirements": [
+        "Proficiency with Adobe Creative Suite (Illustrator, Photoshop, InDesign)",
+        "Strong creativity and visual design skills",
+        "Ability to manage multiple projects under tight deadlines",
+        "Experience in print and digital design"
+      ],
+      "available": false,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5PrvD5tW7hJxHjgfY46E_jZPNTd3nqqyFwL8&s"
     },
     {
       "id": "5",
       "title": "Project Manager",
       "company": "ProjectCo",
       "location": "Karen, Nairobi",
-      "description": "We are looking for an experienced Project Manager to oversee projects from inception to completion...",
-      "requirements": false,
+      "description": "We are looking for an experienced Project Manager to oversee projects from inception to completion. You will manage timelines, budgets, and cross-functional teams to deliver high-quality results.",
+      "requirements": [
+        "Proven experience in project management",
+        "Strong organizational and leadership skills",
+        "Familiarity with project management tools (e.g., Asana, Trello, MS Project)",
+        "Ability to handle multiple projects simultaneously"
+      ],
       "available": false,
       "image": "https://media.licdn.com/dms/image/v2/C4E12AQH67tJUL5rcMA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1615540748477?e=2147483647&v=beta&t=7F76-Drz9fTrteHcZC63K-yQTe3hkWpeDhvlGBAiVZk"
     },
@@ -43,91 +80,117 @@
       "title": "Sales Executive",
       "company": "SalesCorp",
       "location": "Mombasa, Kenya",
-      "description": "We are seeking a dynamic Sales Executive to drive sales and revenue growth...",
-      "requirements": false,
+      "description": "We are seeking a dynamic Sales Executive to drive sales and revenue growth. You will be responsible for identifying new business opportunities, maintaining relationships with clients, and achieving sales targets.",
+      "requirements": [
+        "Proven track record in sales and business development",
+        "Excellent communication and negotiation skills",
+        "Ability to build strong relationships with clients",
+        "Self-motivated with a results-driven approach"
+      ],
       "available": false,
-      "image": "data:image/jpeg;base64,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"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBa-QI-_ShOn2ruWATpJvZ4TRNZXpHbRtq-F8&s"
     },
     {
       "id": "7",
       "title": "Cybersecurity Analyst",
       "company": "CyberCorp",
       "location": "Nairobi, Kenya",
-      "description": "We are looking for a skilled Cybersecurity Analyst to protect our digital assets...",
+      "description": "We are looking for a skilled Cybersecurity Analyst to protect our digital assets by identifying vulnerabilities, analyzing threats, and implementing robust security measures.",
       "requirements": [
         "Certifications in cybersecurity (e.g., CISSP, CISM)",
         "Strong understanding of network security and threat intelligence",
-        "Experience with security tools like SIEM and IDS/IPS"
+        "Experience with security tools like SIEM and IDS/IPS",
+        "Ability to analyze and respond to security incidents"
       ],
       "available": true,
-      "image": "data:image/jpeg;base64,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"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6IYmqukZ9A7F5k1V9r7J2jwN9_LWcLg7Nyg&s"
+    },
+    {
+      "id": "8",
+      "title": "Teacher (Primary School)",
+      "company": "Sunrise Academy",
+      "location": "Eldoret, Kenya",
+      "description": "We are seeking a passionate Primary School Teacher to educate and inspire young minds. You will deliver lessons in a variety of subjects, fostering a positive learning environment.",
+      "requirements": [
+        "Bachelor's degree in Education or relevant field",
+        "Experience in teaching primary school-aged children",
+        "Strong communication and classroom management skills",
+        "Patience and ability to engage children effectively"
+      ],
+      "available": true,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuLFCYssNl6VvG4VUw0yKHIKhsmp8Ae9th7w&s"
     },
     {
       "id": "9",
-      "title": "HR Manager",
-      "company": "HRCorp",
+      "title": "Chef (Hotel & Restaurant)",
+      "company": "TasteBuds Restaurant",
       "location": "Nairobi, Kenya",
-      "description": "We are looking for an experienced HR Manager to oversee our HR functions...",
+      "description": "We are seeking a talented Chef to create delicious dishes for our restaurant. You will be responsible for menu planning, food preparation, and maintaining high-quality standards.",
       "requirements": [
-        "Master's degree in Human Resources or related field",
-        "Strong knowledge of labor laws and regulations",
-        "Experience in recruitment, performance management, and employee relations"
+        "Experience as a professional chef",
+        "Knowledge of food safety and kitchen management",
+        "Creativity in designing new recipes and menus",
+        "Ability to work in a high-pressure kitchen environment"
       ],
-      "available": false,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu4ovowFeeg6tyE02UfUAPkn1vV7ZgLk3ByA&s"
+      "available": true,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Or5l_ElGAKXG2w4zbiV65dNUyyv6Dk9F2A&s"
     },
     {
       "id": "10",
       "title": "Backend Developer",
       "company": "TechCorp",
       "location": "Nairobi, Kenya",
-      "description": "We are seeking a talented Backend Developer to build robust server-side applications...",
+      "description": "We are seeking a talented Backend Developer to build robust server-side applications that power our web and mobile platforms. You will work closely with frontend developers and product teams.",
       "requirements": [
         "Strong programming skills in languages like Python, Node.js, or Ruby on Rails",
         "Experience with databases like PostgreSQL or MongoDB",
-        "Understanding of RESTful APIs and microservices architecture"
+        "Understanding of RESTful APIs and microservices architecture",
+        "Experience with cloud services like AWS or Azure is a plus"
       ],
-      "available": true,
+      "available": false,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbDKGCYzFxOG61HsHfaj7AQ9O-gbUW5DjC_g&s"
     },
     {
       "id": "11",
-      "title": "Frontend Developer",
-      "company": "DesignCo",
-      "location": "Kilimani, Nairobi",
-      "description": "We are looking for a skilled Frontend Developer to create beautiful and functional user interfaces...",
+      "title": "Social Media Manager",
+      "company": "BrandBuzz",
+      "location": "Lavington, Nairobi",
+      "description": "We are looking for a creative Social Media Manager to drive brand awareness and engagement across various platforms, including Facebook, Instagram, and Twitter.",
       "requirements": [
-        "Proficiency in HTML, CSS, and JavaScript",
-        "Experience with frameworks like React, Angular, or Vue.js",
-        "Understanding of responsive design and cross-browser compatibility"
+        "Experience managing social media accounts for brands or companies",
+        "Proficiency in content creation and community management",
+        "Strong writing and visual skills",
+        "Ability to track and analyze social media metrics"
       ],
       "available": false,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHrM7z_e4EKaLii4bqxobq-wm820la5kVc7g&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5SHUVj6I2BQUtJST_H5pG64uH-6hyP0Rmf9E&s"
     },
     {
       "id": "12",
-      "title": "Data Scientist",
-      "company": "DataCorp",
-      "location": "Westlands, Nairobi",
-      "description": "We are seeking a talented Data Scientist to extract insights from large datasets and build predictive models...",
+      "title": "Customer Support Representative",
+      "company": "SupportCo",
+      "location": "Nakuru, Kenya",
+      "description": "We are seeking a friendly and professional Customer Support Representative to assist customers with inquiries, resolve issues, and ensure a positive customer experience.",
       "requirements": [
-        "Strong statistical and machine learning skills",
-        "Proficiency in Python and R",
-        "Experience with data mining and data cleaning techniques"
+        "Excellent communication and problem-solving skills",
+        "Experience in customer service or support roles",
+        "Ability to work in a fast-paced environment",
+        "Strong attention to detail and empathy"
       ],
       "available": false,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg_zdv9KOVwEUX6htFb6YyvRg0tqGjJLqtwQ&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9quSR_NdP0LhQwcxRcsVkZFlGmKb_wICp0kQ&s"
     },
     {
       "id": "13",
       "title": "Marketing Manager",
       "company": "MarketPro",
       "location": "Mombasa, Kenya",
-      "description": "We are looking for an experienced Marketing Manager to develop and execute marketing strategies...",
+      "description": "We are looking for an experienced Marketing Manager to develop and execute marketing strategies, manage campaigns, and oversee branding efforts across multiple platforms.",
       "requirements": [
         "Master's degree in Marketing or related field",
         "Strong leadership and communication skills",
-        "Experience in brand management, advertising, and market research"
+        "Experience in brand management, advertising, and market research",
+        "Ability to analyze market trends and customer data"
       ],
       "available": true,
       "image": "https://st2.depositphotos.com/1047356/10032/i/450/depositphotos_100329010-stock-photo-success-word-cloud.jpg"
@@ -137,28 +200,45 @@
       "title": "Financial Analyst",
       "company": "AccountCorp",
       "location": "Nairobi, Kenya",
-      "description": "We are seeking a skilled Financial Analyst to provide financial insights and support decision-making...",
+      "description": "We are seeking a skilled Financial Analyst to provide financial insights and support decision-making across the company, focusing on financial forecasting, budgeting, and variance analysis.",
       "requirements": [
         "CFA or CA certification",
         "Strong analytical and modeling skills",
-        "Experience with financial forecasting and budgeting"
+        "Experience with financial forecasting and budgeting",
+        "Proficiency in Excel and financial modeling tools"
       ],
-      "available": true,
-      "image": "data:image/jpeg;base64,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"
+      "available": false,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9w55OJGgY9XbgWgb1ZcYrjvKHcxhb1_RkY&s"
     },
     {
       "id": "15",
       "title": "Operations Manager",
       "company": "ProjectCo",
       "location": "Karen, Nairobi",
-      "description": "We are looking for an experienced Operations Manager to optimize our business processes...",
+      "description": "We are looking for an experienced Operations Manager to optimize our business processes, manage supply chains, and oversee day-to-day operations to improve efficiency and productivity.",
       "requirements": [
         "MBA or equivalent degree",
         "Strong process improvement and problem-solving skills",
-        "Experience in supply chain management and logistics"
+        "Experience in supply chain management and logistics",
+        "Proven leadership skills and ability to manage cross-functional teams"
       ],
       "available": false,
       "image": "https://media.licdn.com/dms/image/D5612AQFZ3TUli5w2Dw/article-cover_image-shrink_600_2000/0/1686082211375?e=2147483647&v=beta&t=eKxj1teKgk7kYq0X0bH-H3Dch5vXg-NA-r1tGcPF8-Q"
+    },
+    {
+      "id": "16",
+      "title": "HR Specialist",
+      "company": "PeopleCorp",
+      "location": "Nairobi, Kenya",
+      "description": "We are seeking a skilled HR Specialist to support recruitment, employee training, and HR operations. You will assist with improving HR processes and ensuring compliance with labor laws.",
+      "requirements": [
+        "Degree in Human Resources or related field",
+        "Strong understanding of labor laws",
+        "Experience in recruitment and employee relations",
+        "Excellent organizational and interpersonal skills"
+      ],
+      "available": false,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfuIQh7BOZAWk8fh_JMe1d5p5f8DJyD5xRurA&s"
     }
   ]
 }

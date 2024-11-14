@@ -52,7 +52,7 @@ export default function Job() {
   function handleUpdate(e) {
     e.preventDefault();
 
-    const requirementsList = !Array.isArray(requirements) && requirements.split(",")
+    const requirementsList = !Array.isArray(requirements) ? requirements.split(",") : requirements
 
 
     fetch(`http://localhost:3000/jobs/${id}`, {

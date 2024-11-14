@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-
 
 export default function AddStudent() {
   const [title, setTitle] = useState();
@@ -12,21 +11,20 @@ export default function AddStudent() {
   const [image, setImage] = useState();
   const [available, setAvailable] = useState(false);
 
-  const nav = useNavigate()
+  const nav = useNavigate();
 
-  console.log(title)
+  console.log(title);
   console.log(company);
   console.log(location);
   console.log(description);
   console.log(requirements);
   console.log(image);
-  console.log(available)
+  console.log(available);
 
   function handleSubmit(e) {
     e.preventDefault();
 
-  const requirementsList= requirements.split (",")
- 
+    const requirementsList = requirements.split(",");
 
     fetch(`http://localhost:3000/jobs`, {
       method: "POST",
@@ -40,18 +38,17 @@ export default function AddStudent() {
         description: description,
         requirements: requirementsList,
         image: image,
-        available: available
+        available: available,
       }),
     })
       .then((res) => res.json())
       .then((data) => {
         console.log("Success");
-  
-        
+
         nav("/");
         toast.success("Job added successfully!");
       });
-  
+
     setTitle("");
     setCompany("");
     setLocation("");
@@ -59,9 +56,7 @@ export default function AddStudent() {
     setRequirements("");
     setImage("");
     setAvailable("");
-
   }
-  
 
   return (
     <form
@@ -109,11 +104,11 @@ export default function AddStudent() {
           placeholder="Enter Location"
           required
         />
-         </div>
+      </div>
 
       <div className="mb-3">
         <label htmlFor="description" className="form-label">
-         Description
+          Description
         </label>
         <input
           type="text"
@@ -140,19 +135,17 @@ export default function AddStudent() {
       </div>
 
       <div className="mb-3">
-  <label htmlFor="Available" className="form-label">
-    Available
-  </label>
-  <input
-    type="checkbox"
-    checked={available} 
-    onChange={(e) => setAvailable(e.target.checked)} 
-    className="form-check-input"
-    id="Available"
-    />
-</div>
-
- 
+        <label htmlFor="Available" className="form-label">
+          Available
+        </label>
+        <input
+          type="checkbox"
+          checked={available}
+          onChange={(e) => setAvailable(e.target.checked)}
+          className="form-check-input"
+          id="Available"
+        />
+      </div>
 
       <div className="mb-3">
         <label htmlFor="Image" className="form-label">
@@ -169,7 +162,11 @@ export default function AddStudent() {
       </div>
 
       <div className="text-center">
-        <button type="submit" className="btn " style={{color:'#2557a7' }}>
+        <button
+          type="submit"
+          className="btn "
+          style={{ backgroundColor: "#2557a7", color: "white" }}
+        >
           Submit
         </button>
       </div>
