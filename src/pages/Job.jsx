@@ -39,7 +39,11 @@ export default function Job() {
       .then((res) => res.json())
       .then((data) => {
         nav("/");
-        toast.success("Job deleted successfully!");
+        toast.success("Job deleted successfully!", {
+            style:{
+                color: "#2557a7",
+            },
+        })
       })
       .catch((error) => console.error("Error deleting job:", error));
   }
@@ -69,7 +73,11 @@ export default function Job() {
       .then((res) => res.json())
       .then((data) => {
         nav("/");
-        toast.success("Job updated successfully!");
+        toast.success("Job updated successfully!", {
+            style:{
+                color: "#2557a7"
+            },
+        })
       })
       .catch((error) => console.error("Error updating job:", error));
   }
