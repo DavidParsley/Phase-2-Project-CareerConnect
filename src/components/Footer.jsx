@@ -52,10 +52,10 @@ export default function Footer() {
                   CareerConnect@gmail.com
                 </p>
                 <p>
-                  <i class="fas fa-phone me-3"></i> + 01 234 567 88
+                  <i class="fas fa-phone me-3"></i> +254 726 000000
                 </p>
                 <p>
-                  <i class="fas fa-print me-3"></i> + 01 234 567 89
+                  <i class="fas fa-print me-3"></i> +254 715 111111
                 </p>
               </div>
             </div>
