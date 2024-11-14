@@ -59,13 +59,13 @@ export default function About() {
         <h2 className="section-title">The Team</h2>
         <ul className="team-list">
           <li className="team-member">
-            <strong className="member-name" style={{color:'orange'}}>Anne Muriuki</strong>: A dedicated web developer focused on delivering a seamless user experience.
+            <strong className="member-name" style={{color:'lightskyblue'}}>Anne Muriuki</strong>: A dedicated web developer focused on delivering a seamless user experience.
           </li>
           <li className="team-member">
             <strong className="member-name"  style={{color:'red'}}>Abdimalik Abdullahi</strong>: A driven team member committed to building functional and scalable solutions.
           </li>
           <li className="team-member">
-            <strong className="member-name"  style={{color:'orange'}}>David Parsley</strong>: A collaborator with a keen eye for clean, responsive design and user-centric development.
+            <strong className="member-name"  style={{color:'purple'}}>David Parsley</strong>: A collaborator with a keen eye for clean, responsive design and user-centric development.
           </li>
         </ul>
       </section>
