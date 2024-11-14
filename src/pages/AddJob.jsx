@@ -26,7 +26,7 @@ export default function AddStudent() {
 
     const requirementsList = requirements.split(",");
 
-    fetch(`http://localhost:3000/jobs`, {
+    fetch(`https://phase-2-project-careerconnect.onrender.com/jobs`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
