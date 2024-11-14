@@ -13,17 +13,17 @@ import { useEffect, useState } from "react";
 function App() {
   const [jobs, setJobs] = useState([]);
   const [search, setSearch] = useState("");
-  const [onlyAvailableJobs, setOnlyAvailableJobs] = useState(false); 
+  const [onlyAvailableJobs, setOnlyAvailableJobs] = useState(false);
+  const [sortOption, setSortOption] = useState("id"); 
 
   useEffect(() => {
     fetch("http://localhost:3000/jobs")
       .then((response) => response.json())
       .then((data) => {
-        setJobs(data);
+        setJobs(data); 
       });
   }, []);
 
-  
   const filteredJobs = jobs.filter((job) =>
     job.title.toLowerCase().includes(search.toLowerCase())
   );
@@ -33,8 +33,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout search={search} setSearch={setSearch}   setOnlyAvailableJobs={setOnlyAvailableJobs} />}>
-          <Route index element={<Home jobs={availableJobs} />}/>
+        <Route path="/" element={<Layout search={search} setSearch={setSearch} setOnlyAvailableJobs={setOnlyAvailableJobs} />}>
+          <Route
+            index
+            element={<Home jobs={availableJobs} sortOption={sortOption} setSortOption={setSortOption} />}
+          />
           <Route path="/about" element={<About />} />
           <Route path="/job/:id" element={<Job />} />
           <Route path="addJob" element={<AddJob />} />
