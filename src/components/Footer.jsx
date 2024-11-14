@@ -9,8 +9,7 @@ export default function Footer() {
             <div class="row mt-3">
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <h6>CareerConnect</h6>
-                <p>
-                
+                <p className="slogan">
                 Your Path to the Right Job,<br></br>
                 Your Bridge to the Right Talent<br></br>
                 Anne Maliik Dave

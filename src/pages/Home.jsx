@@ -1,34 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
-export default function Home({ jobs}) {
-    const [sortOption, setSortOption] = useState("title");
-
-    const sortedJobs = [...jobs].sort((a, b) =>
-        sortOption === "title"
-          ? a.title.localeCompare(b.title)
-          : a.company.localeCompare(b.company)
-      );
-
-
+export default function Home({ jobs }) {
+  const [sortOption, setSortOption] = useState("title");
+  const sortedJobs = [...jobs].sort((a, b) => {
+    if (sortOption === "title") {
+      return a.title < b.title ? -1 : a.title > b.title ? 1 : 0;
+    } else {
+      return a.company < b.company ? -1 : a.company > b.company ? 1 : 0;
+    }
+  });
   return (
     <div className="container mt-5">
-      <h2>Job Listings</h2>
+      <div className="d-flex justify-content-between align-items-center">
+        <h2>Job Listings</h2>
 
-      <div className="">
-        <label htmlFor="sortOption" className="me-2">
-          Sort by:
-        </label>
-        <select
-          id="sortOption"
-          value={sortOption}
-          onChange={(e) => setSortOption(e.target.value)}
-          className="form-select"
-        >
-          <option value="title">Title</option>
-          <option value="company">Company</option>
-        </select>
+        <div className="d-flex">
+          <label htmlFor="sortOption" className="me-2">
+            Sort by:
+          </label>
+          <select
+            id="sortOption"
+            value={sortOption}
+            onChange={(e) => setSortOption(e.target.value)}
+            className="form-select form-select-sm"
+            style={{ width: "150px" }}
+          >
+            <option value="title">Title</option>
+            <option value="company">Company</option>
+          </select>
+        </div>
       </div>
 
       {jobs.length < 1 && (
@@ -45,7 +46,11 @@ export default function Home({ jobs}) {
             key={detail.id}
           >
             <div className="card h-100">
-              <img src={detail.image} className="card-img-top" alt={detail.title} />
+              <img
+                src={detail.image}
+                className="card-img-top"
+                alt={detail.title}
+              />
               <div className="card-body d-flex flex-column">
                 <h4 className="card-title text-center">{detail.title}</h4>
                 <h6 className="card-title text-center">

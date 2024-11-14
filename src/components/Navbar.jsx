@@ -4,7 +4,7 @@ export default function Navbar({ search, setSearch, setOnlyAvailableJobs }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#2557a7" }}>
       <div className="container-fluid">
-        <a className="navbar-brand text-white d-flex align-items-center" href="/">
+        <a className="navbar-brand text-white d-flex align-items-center">
           <i className="me-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"

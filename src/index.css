@@ -270,3 +270,8 @@ form button {
 }
 /* Navbar Styling ends here */
 
+/* Footer Slogan Styling starts here */
+.slogan:hover{
+  color: #2557a7;
+}
+/* Footer Slogan Styling ends here */
