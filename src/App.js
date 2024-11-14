@@ -17,7 +17,7 @@ function App() {
   const [sortOption, setSortOption] = useState("id"); 
 
   useEffect(() => {
-    fetch("http://localhost:3000/jobs")
+    fetch("https://phase-2-project-careerconnect.onrender.com/jobs")
       .then((response) => response.json())
       .then((data) => {
         setJobs(data); 
