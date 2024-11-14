@@ -39,8 +39,8 @@
 * JSON Server: A simple tool to set up a REST API with a db.json file to manage data.
 * CSS: For styling the user interface.
 * Bootstrap: For responsive and user-friendly layout.
-* Toastify: For notifications and alerts.
-* Google Fonts: For typography.
+* Toastify: For notifications.
+* Google Fonts: Website Icon.
 
 # Future Plans
 
